@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-XSStreamPlayerDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-XSStreamPlayerDemoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-XSStreamPlayerDemoUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>StreamingKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6DC0F8AA41B79687681B68690DAC9E4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A847C09F68B9365639F061EC8842A91E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCBBBD47B91FEA8216EAD1F40F9D3570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD76E2F3002C59AAE7EEA559F0EEE764</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22E9FA0B3C63838BF6E2FE59 /* libPods-XSStreamPlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDF50846DFEB8BBDD2EC39E /* libPods-XSStreamPlayerDemoTests.a */; };
+		2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */; };
+		2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */; };
+		2A5D787A1E21E91900AD5E1F /* XSAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */; };
+		2A5D787D1E21F7D500AD5E1F /* XSStreamPlayer in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */; };
+		2AC4E8E61E207AF300F0AEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E51E207AF300F0AEAB /* main.m */; };
+		2AC4E8E91E207AF300F0AEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */; };
+		2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */; };
+		2AC4E8F11E207AF300F0AEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4E8F01E207AF300F0AEAB /* Assets.xcassets */; };
+		2AC4E8F41E207AF300F0AEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4E8F21E207AF300F0AEAB /* LaunchScreen.storyboard */; };
+		2AC4E8FF1E207AF400F0AEAB /* XSStreamPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8FE1E207AF400F0AEAB /* XSStreamPlayerDemoTests.m */; };
+		2AC4E90A1E207AF400F0AEAB /* XSStreamPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E9091E207AF400F0AEAB /* XSStreamPlayerDemoUITests.m */; };
+		B1B61E7CB3E48B7001D57AB6 /* libPods-XSStreamPlayerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7384B2A98CE49FE5188B8E89 /* libPods-XSStreamPlayerDemoUITests.a */; };
+		D81339F6FB7A257506C8B29F /* libPods-XSStreamPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79066E136C9E1A3E44C52095 /* libPods-XSStreamPlayerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AC4E8FB1E207AF400F0AEAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC4E8D91E207AF300F0AEAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC4E8E01E207AF300F0AEAB;
+			remoteInfo = XSStreamPlayerDemo;
+		};
+		2AC4E9061E207AF400F0AEAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC4E8D91E207AF300F0AEAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC4E8E01E207AF300F0AEAB;
+			remoteInfo = XSStreamPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C417C38F119F6918D2DF95F /* Pods-XSStreamPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemoUITests/Pods-XSStreamPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A5D78711E21E62A00AD5E1F /* XSMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSMainTableViewController.h; sourceTree = "<group>"; };
+		2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMainTableViewController.m; sourceTree = "<group>"; };
+		2A5D78751E21E90900AD5E1F /* XSAudioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioTableViewController.h; sourceTree = "<group>"; };
+		2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioTableViewController.m; sourceTree = "<group>"; };
+		2A5D78781E21E91900AD5E1F /* XSAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioViewController.h; sourceTree = "<group>"; };
+		2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioViewController.m; sourceTree = "<group>"; };
+		2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XSStreamPlayer; sourceTree = "<group>"; };
+		2AC4E8E11E207AF300F0AEAB /* XSStreamPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSStreamPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC4E8E51E207AF300F0AEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AC4E8E71E207AF300F0AEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2AC4E8EE1E207AF300F0AEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AC4E8F01E207AF300F0AEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AC4E8F31E207AF300F0AEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AC4E8F51E207AF300F0AEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC4E8FA1E207AF400F0AEAB /* XSStreamPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XSStreamPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC4E8FE1E207AF400F0AEAB /* XSStreamPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSStreamPlayerDemoTests.m; sourceTree = "<group>"; };
+		2AC4E9001E207AF400F0AEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC4E9051E207AF400F0AEAB /* XSStreamPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XSStreamPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC4E9091E207AF400F0AEAB /* XSStreamPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSStreamPlayerDemoUITests.m; sourceTree = "<group>"; };
+		2AC4E90B1E207AF400F0AEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F92F8C75541D5E4DAA1254A /* Pods-XSStreamPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemo/Pods-XSStreamPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4997305F94B98E6EAFD01CB4 /* Pods-XSStreamPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemoTests/Pods-XSStreamPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		542C8301D34120E194753C8C /* Pods-XSStreamPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemoTests/Pods-XSStreamPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		62CD900654BB1080C6A60714 /* Pods-XSStreamPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemo/Pods-XSStreamPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7384B2A98CE49FE5188B8E89 /* libPods-XSStreamPlayerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XSStreamPlayerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79066E136C9E1A3E44C52095 /* libPods-XSStreamPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XSStreamPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDF50846DFEB8BBDD2EC39E /* libPods-XSStreamPlayerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XSStreamPlayerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2B24476D17073F19C3720F /* Pods-XSStreamPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemoUITests/Pods-XSStreamPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AC4E8DE1E207AF300F0AEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81339F6FB7A257506C8B29F /* libPods-XSStreamPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E8F71E207AF400F0AEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E9FA0B3C63838BF6E2FE59 /* libPods-XSStreamPlayerDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E9021E207AF400F0AEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B61E7CB3E48B7001D57AB6 /* libPods-XSStreamPlayerDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5D78741E21E8EF00AD5E1F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D78711E21E62A00AD5E1F /* XSMainTableViewController.h */,
+				2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */,
+				2A5D78781E21E91900AD5E1F /* XSAudioViewController.h */,
+				2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */,
+				2A5D78751E21E90900AD5E1F /* XSAudioTableViewController.h */,
+				2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2A5D787B1E21EC9E00AD5E1F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		2AC4E8D81E207AF300F0AEAB = {
+			isa = PBXGroup;
+			children = (
+				2AC4E8E31E207AF300F0AEAB /* XSStreamPlayerDemo */,
+				2AC4E8FD1E207AF400F0AEAB /* XSStreamPlayerDemoTests */,
+				2AC4E9081E207AF400F0AEAB /* XSStreamPlayerDemoUITests */,
+				2AC4E8E21E207AF300F0AEAB /* Products */,
+				59E5F0C27F92FF85059A618E /* Pods */,
+				8A1C33483EAEBEBAAF6B8268 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AC4E8E21E207AF300F0AEAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4E8E11E207AF300F0AEAB /* XSStreamPlayerDemo.app */,
+				2AC4E8FA1E207AF400F0AEAB /* XSStreamPlayerDemoTests.xctest */,
+				2AC4E9051E207AF400F0AEAB /* XSStreamPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AC4E8E31E207AF300F0AEAB /* XSStreamPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4E8E71E207AF300F0AEAB /* AppDelegate.h */,
+				2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */,
+				2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */,
+				2A5D787B1E21EC9E00AD5E1F /* Resource */,
+				2A5D78741E21E8EF00AD5E1F /* UI */,
+				2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */,
+				2AC4E8F01E207AF300F0AEAB /* Assets.xcassets */,
+				2AC4E8F21E207AF300F0AEAB /* LaunchScreen.storyboard */,
+				2AC4E8F51E207AF300F0AEAB /* Info.plist */,
+				2AC4E8E41E207AF300F0AEAB /* Supporting Files */,
+			);
+			path = XSStreamPlayerDemo;
+			sourceTree = "<group>";
+		};
+		2AC4E8E41E207AF300F0AEAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4E8E51E207AF300F0AEAB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AC4E8FD1E207AF400F0AEAB /* XSStreamPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4E8FE1E207AF400F0AEAB /* XSStreamPlayerDemoTests.m */,
+				2AC4E9001E207AF400F0AEAB /* Info.plist */,
+			);
+			path = XSStreamPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		2AC4E9081E207AF400F0AEAB /* XSStreamPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4E9091E207AF400F0AEAB /* XSStreamPlayerDemoUITests.m */,
+				2AC4E90B1E207AF400F0AEAB /* Info.plist */,
+			);
+			path = XSStreamPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		59E5F0C27F92FF85059A618E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F92F8C75541D5E4DAA1254A /* Pods-XSStreamPlayerDemo.debug.xcconfig */,
+				62CD900654BB1080C6A60714 /* Pods-XSStreamPlayerDemo.release.xcconfig */,
+				4997305F94B98E6EAFD01CB4 /* Pods-XSStreamPlayerDemoTests.debug.xcconfig */,
+				542C8301D34120E194753C8C /* Pods-XSStreamPlayerDemoTests.release.xcconfig */,
+				1C417C38F119F6918D2DF95F /* Pods-XSStreamPlayerDemoUITests.debug.xcconfig */,
+				DF2B24476D17073F19C3720F /* Pods-XSStreamPlayerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A1C33483EAEBEBAAF6B8268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79066E136C9E1A3E44C52095 /* libPods-XSStreamPlayerDemo.a */,
+				CBDF50846DFEB8BBDD2EC39E /* libPods-XSStreamPlayerDemoTests.a */,
+				7384B2A98CE49FE5188B8E89 /* libPods-XSStreamPlayerDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AC4E8E01E207AF300F0AEAB /* XSStreamPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC4E90E1E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemo" */;
+			buildPhases = (
+				81B2EE9C13FD05D15B106877 /* [CP] Check Pods Manifest.lock */,
+				2AC4E8DD1E207AF300F0AEAB /* Sources */,
+				2AC4E8DE1E207AF300F0AEAB /* Frameworks */,
+				2AC4E8DF1E207AF300F0AEAB /* Resources */,
+				35104D9DE75C981E25CE60FB /* [CP] Embed Pods Frameworks */,
+				5EA45F26F8DE2C3F0F5045C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XSStreamPlayerDemo;
+			productName = XSStreamPlayerDemo;
+			productReference = 2AC4E8E11E207AF300F0AEAB /* XSStreamPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AC4E8F91E207AF400F0AEAB /* XSStreamPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC4E9111E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemoTests" */;
+			buildPhases = (
+				4878DCCBCD1447EFFE532A2E /* [CP] Check Pods Manifest.lock */,
+				2AC4E8F61E207AF400F0AEAB /* Sources */,
+				2AC4E8F71E207AF400F0AEAB /* Frameworks */,
+				2AC4E8F81E207AF400F0AEAB /* Resources */,
+				5AA7174101C20112CB204D47 /* [CP] Embed Pods Frameworks */,
+				57937CDBE3C80E5F5BDA7F11 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC4E8FC1E207AF400F0AEAB /* PBXTargetDependency */,
+			);
+			name = XSStreamPlayerDemoTests;
+			productName = XSStreamPlayerDemoTests;
+			productReference = 2AC4E8FA1E207AF400F0AEAB /* XSStreamPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AC4E9041E207AF400F0AEAB /* XSStreamPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC4E9141E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemoUITests" */;
+			buildPhases = (
+				2CCB12B3F44FDBB7281115F3 /* [CP] Check Pods Manifest.lock */,
+				2AC4E9011E207AF400F0AEAB /* Sources */,
+				2AC4E9021E207AF400F0AEAB /* Frameworks */,
+				2AC4E9031E207AF400F0AEAB /* Resources */,
+				9179FCA654674FED472DED64 /* [CP] Embed Pods Frameworks */,
+				4C8EAA4E21CFF0D9DF2E83C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC4E9071E207AF400F0AEAB /* PBXTargetDependency */,
+			);
+			name = XSStreamPlayerDemoUITests;
+			productName = XSStreamPlayerDemoUITests;
+			productReference = 2AC4E9051E207AF400F0AEAB /* XSStreamPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AC4E8D91E207AF300F0AEAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = faterman;
+				TargetAttributes = {
+					2AC4E8E01E207AF300F0AEAB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2VRBM2SVBC;
+						ProvisioningStyle = Automatic;
+					};
+					2AC4E8F91E207AF400F0AEAB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AC4E8E01E207AF300F0AEAB;
+					};
+					2AC4E9041E207AF400F0AEAB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AC4E8E01E207AF300F0AEAB;
+					};
+				};
+			};
+			buildConfigurationList = 2AC4E8DC1E207AF300F0AEAB /* Build configuration list for PBXProject "XSStreamPlayerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AC4E8D81E207AF300F0AEAB;
+			productRefGroup = 2AC4E8E21E207AF300F0AEAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AC4E8E01E207AF300F0AEAB /* XSStreamPlayerDemo */,
+				2AC4E8F91E207AF400F0AEAB /* XSStreamPlayerDemoTests */,
+				2AC4E9041E207AF400F0AEAB /* XSStreamPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AC4E8DF1E207AF300F0AEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC4E8F41E207AF300F0AEAB /* LaunchScreen.storyboard in Resources */,
+				2AC4E8F11E207AF300F0AEAB /* Assets.xcassets in Resources */,
+				2A5D787D1E21F7D500AD5E1F /* XSStreamPlayer in Resources */,
+				2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E8F81E207AF400F0AEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E9031E207AF400F0AEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCB12B3F44FDBB7281115F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		35104D9DE75C981E25CE60FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemo/Pods-XSStreamPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4878DCCBCD1447EFFE532A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C8EAA4E21CFF0D9DF2E83C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemoUITests/Pods-XSStreamPlayerDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57937CDBE3C80E5F5BDA7F11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemoTests/Pods-XSStreamPlayerDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA7174101C20112CB204D47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemoTests/Pods-XSStreamPlayerDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA45F26F8DE2C3F0F5045C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemo/Pods-XSStreamPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81B2EE9C13FD05D15B106877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9179FCA654674FED472DED64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSStreamPlayerDemoUITests/Pods-XSStreamPlayerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AC4E8DD1E207AF300F0AEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5D787A1E21E91900AD5E1F /* XSAudioViewController.m in Sources */,
+				2AC4E8E91E207AF300F0AEAB /* AppDelegate.m in Sources */,
+				2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */,
+				2AC4E8E61E207AF300F0AEAB /* main.m in Sources */,
+				2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E8F61E207AF400F0AEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC4E8FF1E207AF400F0AEAB /* XSStreamPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4E9011E207AF400F0AEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC4E90A1E207AF400F0AEAB /* XSStreamPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AC4E8FC1E207AF400F0AEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC4E8E01E207AF300F0AEAB /* XSStreamPlayerDemo */;
+			targetProxy = 2AC4E8FB1E207AF400F0AEAB /* PBXContainerItemProxy */;
+		};
+		2AC4E9071E207AF400F0AEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC4E8E01E207AF300F0AEAB /* XSStreamPlayerDemo */;
+			targetProxy = 2AC4E9061E207AF400F0AEAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AC4E8EE1E207AF300F0AEAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AC4E8F21E207AF300F0AEAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AC4E8F31E207AF300F0AEAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AC4E90C1E207AF400F0AEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2AC4E90D1E207AF400F0AEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AC4E90F1E207AF400F0AEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F92F8C75541D5E4DAA1254A /* Pods-XSStreamPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2VRBM2SVBC;
+				INFOPLIST_FILE = XSStreamPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AC4E9101E207AF400F0AEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CD900654BB1080C6A60714 /* Pods-XSStreamPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2VRBM2SVBC;
+				INFOPLIST_FILE = XSStreamPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2AC4E9121E207AF400F0AEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4997305F94B98E6EAFD01CB4 /* Pods-XSStreamPlayerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XSStreamPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSStreamPlayerDemo.app/XSStreamPlayerDemo";
+			};
+			name = Debug;
+		};
+		2AC4E9131E207AF400F0AEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542C8301D34120E194753C8C /* Pods-XSStreamPlayerDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XSStreamPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSStreamPlayerDemo.app/XSStreamPlayerDemo";
+			};
+			name = Release;
+		};
+		2AC4E9151E207AF400F0AEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C417C38F119F6918D2DF95F /* Pods-XSStreamPlayerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = XSStreamPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XSStreamPlayerDemo;
+			};
+			name = Debug;
+		};
+		2AC4E9161E207AF400F0AEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2B24476D17073F19C3720F /* Pods-XSStreamPlayerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = XSStreamPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faterman.XSStreamPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XSStreamPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AC4E8DC1E207AF300F0AEAB /* Build configuration list for PBXProject "XSStreamPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC4E90C1E207AF400F0AEAB /* Debug */,
+				2AC4E90D1E207AF400F0AEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC4E90E1E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC4E90F1E207AF400F0AEAB /* Debug */,
+				2AC4E9101E207AF400F0AEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC4E9111E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC4E9121E207AF400F0AEAB /* Debug */,
+				2AC4E9131E207AF400F0AEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC4E9141E207AF400F0AEAB /* Build configuration list for PBXNativeTarget "XSStreamPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC4E9151E207AF400F0AEAB /* Debug */,
+				2AC4E9161E207AF400F0AEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AC4E8D91E207AF300F0AEAB /* Project object */;
+}
