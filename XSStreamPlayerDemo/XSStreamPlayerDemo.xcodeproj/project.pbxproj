@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		22E9FA0B3C63838BF6E2FE59 /* libPods-XSStreamPlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDF50846DFEB8BBDD2EC39E /* libPods-XSStreamPlayerDemoTests.a */; };
+		2A024F161E237F7900D0CE46 /* XSStreamPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A024F151E237F7900D0CE46 /* XSStreamPlayer.m */; };
+		2A024F191E23801400D0CE46 /* cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A024F181E23801400D0CE46 /* cover.jpeg */; };
+		2A024F5C1E24829A00D0CE46 /* XSAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A024F5B1E24829A00D0CE46 /* XSAudioView.m */; };
+		2A024F5E1E2482AF00D0CE46 /* XSAudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A024F5D1E2482AF00D0CE46 /* XSAudioView.xib */; };
 		2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */; };
 		2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */; };
 		2A5D787A1E21E91900AD5E1F /* XSAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */; };
-		2A5D787D1E21F7D500AD5E1F /* XSStreamPlayer in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */; };
 		2AC4E8E61E207AF300F0AEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E51E207AF300F0AEAB /* main.m */; };
 		2AC4E8E91E207AF300F0AEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */; };
 		2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */; };
@@ -42,13 +45,18 @@
 
 /* Begin PBXFileReference section */
 		1C417C38F119F6918D2DF95F /* Pods-XSStreamPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSStreamPlayerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSStreamPlayerDemoUITests/Pods-XSStreamPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A024F141E237F7900D0CE46 /* XSStreamPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSStreamPlayer.h; path = ../../XSStreamPlayer/XSStreamPlayer.h; sourceTree = "<group>"; };
+		2A024F151E237F7900D0CE46 /* XSStreamPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSStreamPlayer.m; path = ../../XSStreamPlayer/XSStreamPlayer.m; sourceTree = "<group>"; };
+		2A024F181E23801400D0CE46 /* cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpeg; sourceTree = "<group>"; };
+		2A024F5A1E24829A00D0CE46 /* XSAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioView.h; sourceTree = "<group>"; };
+		2A024F5B1E24829A00D0CE46 /* XSAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioView.m; sourceTree = "<group>"; };
+		2A024F5D1E2482AF00D0CE46 /* XSAudioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XSAudioView.xib; sourceTree = "<group>"; };
 		2A5D78711E21E62A00AD5E1F /* XSMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSMainTableViewController.h; sourceTree = "<group>"; };
 		2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMainTableViewController.m; sourceTree = "<group>"; };
 		2A5D78751E21E90900AD5E1F /* XSAudioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioTableViewController.h; sourceTree = "<group>"; };
 		2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioTableViewController.m; sourceTree = "<group>"; };
 		2A5D78781E21E91900AD5E1F /* XSAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioViewController.h; sourceTree = "<group>"; };
 		2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioViewController.m; sourceTree = "<group>"; };
-		2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XSStreamPlayer; sourceTree = "<group>"; };
 		2AC4E8E11E207AF300F0AEAB /* XSStreamPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSStreamPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC4E8E51E207AF300F0AEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AC4E8E71E207AF300F0AEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,7 +109,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A5D78741E21E8EF00AD5E1F /* UI */ = {
+		2A024F171E237F8200D0CE46 /* XSStreamPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2A024F141E237F7900D0CE46 /* XSStreamPlayer.h */,
+				2A024F151E237F7900D0CE46 /* XSStreamPlayer.m */,
+			);
+			name = XSStreamPlayer;
+			sourceTree = "<group>";
+		};
+		2A024F591E24825D00D0CE46 /* SRC */ = {
 			isa = PBXGroup;
 			children = (
 				2A5D78711E21E62A00AD5E1F /* XSMainTableViewController.h */,
@@ -111,12 +128,23 @@
 				2A5D78751E21E90900AD5E1F /* XSAudioTableViewController.h */,
 				2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */,
 			);
+			name = SRC;
+			sourceTree = "<group>";
+		};
+		2A5D78741E21E8EF00AD5E1F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2A024F5A1E24829A00D0CE46 /* XSAudioView.h */,
+				2A024F5B1E24829A00D0CE46 /* XSAudioView.m */,
+				2A024F5D1E2482AF00D0CE46 /* XSAudioView.xib */,
+			);
 			name = UI;
 			sourceTree = "<group>";
 		};
 		2A5D787B1E21EC9E00AD5E1F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2A024F181E23801400D0CE46 /* cover.jpeg */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -148,7 +176,8 @@
 			children = (
 				2AC4E8E71E207AF300F0AEAB /* AppDelegate.h */,
 				2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */,
-				2A5D787C1E21F7D500AD5E1F /* XSStreamPlayer */,
+				2A024F591E24825D00D0CE46 /* SRC */,
+				2A024F171E237F8200D0CE46 /* XSStreamPlayer */,
 				2A5D787B1E21EC9E00AD5E1F /* Resource */,
 				2A5D78741E21E8EF00AD5E1F /* UI */,
 				2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */,
@@ -326,9 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC4E8F41E207AF300F0AEAB /* LaunchScreen.storyboard in Resources */,
+				2A024F191E23801400D0CE46 /* cover.jpeg in Resources */,
 				2AC4E8F11E207AF300F0AEAB /* Assets.xcassets in Resources */,
-				2A5D787D1E21F7D500AD5E1F /* XSStreamPlayer in Resources */,
 				2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */,
+				2A024F5E1E2482AF00D0CE46 /* XSAudioView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +526,8 @@
 				2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */,
 				2AC4E8E61E207AF300F0AEAB /* main.m in Sources */,
 				2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */,
+				2A024F161E237F7900D0CE46 /* XSStreamPlayer.m in Sources */,
+				2A024F5C1E24829A00D0CE46 /* XSAudioView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +600,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -590,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -615,6 +648,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -631,7 +665,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

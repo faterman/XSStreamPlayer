@@ -11,6 +11,9 @@
 static XSStreamPlayer *streamPlayer = nil;
 
 @interface XSStreamPlayer () <STKAudioPlayerDelegate>
+{
+    NSTimer *_timer;
+}
 @property (nonatomic, strong) STKAudioPlayer *audioPlayer;
 @end
 
@@ -40,20 +43,60 @@ static XSStreamPlayer *streamPlayer = nil;
     return (NSInteger)self.audioPlayer.state;
 }
 
+- (double)progress {
 
-- (void)playWith:(NSString *)urlStr PlayingUIHashCode:(NSString *)playingUIHashCode{
+    return self.audioPlayer.progress;
+}
 
+- (double)duration {
+    return self.audioPlayer.duration;
+}
+
+
+- (void)playWith:(NSString *)urlStr PlayingUIHashCode:(NSString *)playingUIHashCode {
     self.playingUIHashCode = playingUIHashCode;
     [self.audioPlayer play:urlStr];
 }
 
-- (void)playWith:(NSString *)urlStr{
+- (void)playWith:(NSString *)urlStr {
     [self.audioPlayer play:urlStr];
+    [self startProgressTimer];
+    
 }
 
-- (void)queueWith:(NSString *)urlStr{
+- (void)pause {
+    [self.audioPlayer pause];
+}
+
+- (void)resume {
+    [self.audioPlayer resume];
+}
+
+- (void)queueWith:(NSString *)urlStr {
     [self.audioPlayer queue:urlStr];
 }
+
+- (void)seekToTime:(double)time {
+
+    [self.audioPlayer seekToTime:time];
+}
+
+
+- (void)startProgressTimer {
+
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(progressCallBack) userInfo:nil repeats:YES];
+    [_timer fire];
+}
+
+
+- (void)progressCallBack {
+    if ([self.delegate respondsToSelector:@selector(audioPlayer:PlayTo:Duration:)]) {
+        [self.delegate audioPlayer:self PlayTo:self.progress Duration:self.duration];
+    }
+
+}
+
+
 
 #pragma mark - STKAudioPlayerDelegate
 - (void)audioPlayer:(STKAudioPlayer*)audioPlayer stateChanged:(STKAudioPlayerState)state previousState:(STKAudioPlayerState)previousState

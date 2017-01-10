@@ -12,14 +12,14 @@
 
 typedef NS_OPTIONS(NSInteger, XSStreamPlayerState)
 {
-    XSStreamPlayerStateReady,
-    XSStreamPlayerStateRunning = 1,
-    XSStreamPlayerStatePlaying = (1 << 1) | XSStreamPlayerStateRunning,
-    XSStreamPlayerStateBuffering = (1 << 2) | XSStreamPlayerStateRunning,
-    XSStreamPlayerStatePaused = (1 << 3) | XSStreamPlayerStateRunning,
-    XSStreamPlayerStateStopped = (1 << 4),
-    XSStreamPlayerStateError = (1 << 5),
-    XSStreamPlayerStateDisposed = (1 << 6)
+    XSStreamPlayerStateReady,                                           //0
+    XSStreamPlayerStateRunning = 1,                                     //1
+    XSStreamPlayerStatePlaying = (1 << 1) | XSStreamPlayerStateRunning, //3
+    XSStreamPlayerStateBuffering = (1 << 2) | XSStreamPlayerStateRunning,//5
+    XSStreamPlayerStatePaused = (1 << 3) | XSStreamPlayerStateRunning,  //9
+    XSStreamPlayerStateStopped = (1 << 4),                              //16
+    XSStreamPlayerStateError = (1 << 5),                                //32
+    XSStreamPlayerStateDisposed = (1 << 6)                              //64
 };
 
 typedef NS_ENUM(NSInteger, XSStreamPlayerStopReason)
@@ -56,11 +56,13 @@ typedef NS_ENUM(NSInteger, XSStreamPlayerErrorCode)
 /// 当一个项目开始播放调用
 - (void)audioPlayer:(XSStreamPlayer *)audioPlayer didStartPlayingQueueItemId:(NSObject*)queueItemId;
 
-// 一般是歌曲快结束提前5秒调用
+// 一般是项目快结束提前5秒调用
 - (void)audioPlayer:(XSStreamPlayer *)audioPlayer didFinishBufferingSourceWithQueueItemId:(NSObject*)queueItemId;
 
 ///当一个项目完成后，就调用
--(void) audioPlayer:(XSStreamPlayer *)audioPlayer didFinishPlayingQueueItemId:(NSObject*)queueItemId withReason:(XSStreamPlayerStopReason)stopReason andProgress:(double)progress andDuration:(double)duration;
+- (void)audioPlayer:(XSStreamPlayer *)audioPlayer didFinishPlayingQueueItemId:(NSObject*)queueItemId withReason:(XSStreamPlayerStopReason)stopReason andProgress:(double)progress andDuration:(double)duration;
+
+- (void)audioPlayer:(XSStreamPlayer *)audioPlayer PlayTo:(double)progress Duration:(double)duration;
 
 @end
 
@@ -68,9 +70,12 @@ typedef NS_ENUM(NSInteger, XSStreamPlayerErrorCode)
 
 /// 获得当前播放器状态
 @property(nonatomic, readonly, assign) XSStreamPlayerState state;
-@property(nonatomic, weak) id<XSStreamPlayerDelegate>delegate;
+@property(nonatomic, readonly, assign) double duration;
+@property(nonatomic, readonly, assign) double progress;
 /// 一致就可以判定当前播放控件为正在播放的控件，播放控件需实现钙值并传入
 @property (nonatomic, assign) NSString *playingUIHashCode;
+@property(nonatomic, weak) id<XSStreamPlayerDelegate>delegate;
+
 
 
 + (instancetype)shareStreamPlayer;
@@ -79,6 +84,12 @@ typedef NS_ENUM(NSInteger, XSStreamPlayerErrorCode)
 
 - (void)playWith:(NSString *)urlStr PlayingUIHashCode:(NSString *)playingUIHashCode;
 
+- (void)pause;
+
+- (void)resume;
+
 - (void)queueWith:(NSString *)urlStr;
+
+- (void)seekToTime:(double)time;
 
 @end
