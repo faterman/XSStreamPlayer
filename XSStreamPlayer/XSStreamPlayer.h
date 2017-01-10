@@ -68,7 +68,9 @@ typedef NS_ENUM(NSInteger, XSStreamPlayerErrorCode)
 
 @interface XSStreamPlayer : NSObject
 
-/// 获得当前播放器状态
+/// 获得当前播放器
+@property(nonatomic, strong) NSArray *urlArray;
+/// 获得当前播放器状态属性
 @property(nonatomic, readonly, assign) XSStreamPlayerState state;
 @property(nonatomic, readonly, assign) double duration;
 @property(nonatomic, readonly, assign) double progress;

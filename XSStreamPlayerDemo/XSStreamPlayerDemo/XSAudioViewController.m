@@ -35,7 +35,6 @@ static NSString *demoAudioUrlStr = @"http://wyyimg.aspoontech.com/webimg/mp3/696
     _streamPlayer.delegate = self;
     [self.processSlider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
 }
-
 - (IBAction)paly:(id)sender {
     
     
@@ -61,7 +60,6 @@ static NSString *demoAudioUrlStr = @"http://wyyimg.aspoontech.com/webimg/mp3/696
 
     }
 }
-
 - (void)sliderValueChanged:(UISlider *)silder{
 
     if (_streamPlayer.duration > 0) {
@@ -77,14 +75,11 @@ static NSString *demoAudioUrlStr = @"http://wyyimg.aspoontech.com/webimg/mp3/696
     self.statusLabel.text = [NSString stringWithFormat:@"%ld-->%ld",previousState,state];
 
 }
-
 - (void)audioPlayer:(XSStreamPlayer *)audioPlayer PlayTo:(double)progress Duration:(double)duration{
 
     NSLog(@"%f/%f",progress,duration);
     self.processSlider.value = progress / duration;
 }
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
