@@ -152,6 +152,7 @@
                     <navigationItem key="navigationItem" title="音频播放" id="70C-wN-zJU"/>
                     <connections>
                         <outlet property="downBtn" destination="0dT-OL-UuZ" id="Jmy-Gq-7BP"/>
+                        <outlet property="indicator" destination="nsl-rj-h1Z" id="gjy-LZ-KMx"/>
                         <outlet property="playBtn" destination="Hgk-uH-AW8" id="PKe-Li-hK7"/>
                         <outlet property="processSlider" destination="cDK-co-xbU" id="7B0-kE-Vd3"/>
                         <outlet property="statusLabel" destination="a8I-MZ-9zd" id="pVV-TR-jJa"/>

@@ -19,6 +19,7 @@ static XSStreamPlayer *streamPlayer = nil;
 
 @implementation XSStreamPlayer
 
+#pragma mark - SingletonMethod
 + (instancetype)shareStreamPlayer {
     if (streamPlayer == nil) {
         static dispatch_once_t onceToken;
@@ -30,24 +31,21 @@ static XSStreamPlayer *streamPlayer = nil;
     }
     return streamPlayer;
 }
-
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     return [XSStreamPlayer shareStreamPlayer];
 }
-
 - (id)copy {
     return [XSStreamPlayer shareStreamPlayer];
 }
 
+#pragma mark - AudioPlayerMethod
 - (XSStreamPlayerState)state {
     return (NSInteger)self.audioPlayer.state;
 }
-
 - (double)progress {
 
     return self.audioPlayer.progress;
 }
-
 - (double)duration {
     return self.audioPlayer.duration;
 }
@@ -57,38 +55,39 @@ static XSStreamPlayer *streamPlayer = nil;
     self.playingUIHashCode = playingUIHashCode;
     [self.audioPlayer play:urlStr];
 }
-
 - (void)playWith:(NSString *)urlStr {
     [self.audioPlayer play:urlStr];
     [self startProgressTimer];
     
 }
-
 - (void)pause {
     [self.audioPlayer pause];
 }
-
 - (void)resume {
     [self.audioPlayer resume];
 }
-
 - (void)queueWith:(NSString *)urlStr {
     [self.audioPlayer queue:urlStr];
 }
-
 - (void)seekToTime:(double)time {
 
     [self.audioPlayer seekToTime:time];
 }
 
 
+#pragma mark - ProgressTimerMethod
 - (void)startProgressTimer {
 
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(progressCallBack) userInfo:nil repeats:YES];
     [_timer fire];
 }
+- (void)stopProgressTimer {
 
-
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
 - (void)progressCallBack {
     if ([self.delegate respondsToSelector:@selector(audioPlayer:PlayTo:Duration:)]) {
         [self.delegate audioPlayer:self PlayTo:self.progress Duration:self.duration];
@@ -101,11 +100,13 @@ static XSStreamPlayer *streamPlayer = nil;
 #pragma mark - STKAudioPlayerDelegate
 - (void)audioPlayer:(STKAudioPlayer*)audioPlayer stateChanged:(STKAudioPlayerState)state previousState:(STKAudioPlayerState)previousState
 {
+    //播放停止的时候同时停止进度计时器
+    if (state == XSStreamPlayerStateStopped ) [self stopProgressTimer];
+    
     if ([self.delegate respondsToSelector:@selector(audioPlayer:stateChanged:previousState:)]) {
         [self.delegate audioPlayer:self stateChanged:(NSInteger)state previousState:(NSInteger)previousState];
     }
 }
-
 - (void)audioPlayer:(STKAudioPlayer*)audioPlayer unexpectedError:(STKAudioPlayerErrorCode)errorCode
 {
     if ([self.delegate respondsToSelector:@selector(audioPlayer:unexpectedError:)]) {
@@ -113,14 +114,12 @@ static XSStreamPlayer *streamPlayer = nil;
     }
     
 }
-
 - (void)audioPlayer:(STKAudioPlayer*)audioPlayer didStartPlayingQueueItemId:(NSObject*)queueItemId
 {
     if ([self.delegate respondsToSelector:@selector(audioPlayer:didStartPlayingQueueItemId:)]) {
         [self.delegate audioPlayer:self didStartPlayingQueueItemId:queueItemId];
     }
 }
-
 - (void)audioPlayer:(STKAudioPlayer*)audioPlayer didFinishBufferingSourceWithQueueItemId:(NSObject*)queueItemId
 {
     if ([self.delegate respondsToSelector:@selector(audioPlayer:didFinishBufferingSourceWithQueueItemId:)]) {
@@ -128,14 +127,12 @@ static XSStreamPlayer *streamPlayer = nil;
     }
     
 }
-
 -(void) audioPlayer:(STKAudioPlayer*)audioPlayer didFinishPlayingQueueItemId:(NSObject*)queueItemId withReason:(STKAudioPlayerStopReason)stopReason andProgress:(double)progress andDuration:(double)duration
 {
     if ([self.delegate respondsToSelector:@selector(audioPlayer:didFinishPlayingQueueItemId:withReason:andProgress:andDuration:)]) {
         [self.delegate audioPlayer:self didFinishPlayingQueueItemId:queueItemId withReason:(NSInteger)stopReason andProgress:progress andDuration:duration];
     }
 }
-
 -(void) audioPlayer:(STKAudioPlayer*)audioPlayer didCancelQueuedItems:(NSArray*)queuedItems{
     
     if ([self.delegate respondsToSelector:@selector(audioPlayer:didCancelQueuedItems:)]) {
