@@ -7,50 +7,46 @@
 //
 
 #import "XSAudioTableViewController.h"
-
-@interface XSAudioTableViewController ()
-
+#import "XSStreamPlayer.h"
+#import "XSAudioCell.h"
+@interface XSAudioTableViewController () <XSStreamPlayerDelegate>
+{
+    XSStreamPlayer *_streamPlayer;
+}
 @end
 
 @implementation XSAudioTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _streamPlayer = [XSStreamPlayer shareStreamPlayer];
+    _streamPlayer.delegate = self;
+    [self.tableView registerNib:[UINib nibWithNibName:@"XSAudioCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:XSAudioCellIdentifier];
+    
+}
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Configure the cell...
+    XSAudioCell *cell = [tableView dequeueReusableCellWithIdentifier:XSAudioCellIdentifier];
+    cell.audioUrl = @"http://wyyimg.aspoontech.com/webimg/mp3/6961357070508281482304117930.mp3";
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

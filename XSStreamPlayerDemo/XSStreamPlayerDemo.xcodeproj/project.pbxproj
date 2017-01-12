@@ -15,6 +15,8 @@
 		2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78721E21E62A00AD5E1F /* XSMainTableViewController.m */; };
 		2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */; };
 		2A5D787A1E21E91900AD5E1F /* XSAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */; };
+		2AB199821E271D1A002F45B2 /* XSAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB199801E271D1A002F45B2 /* XSAudioCell.m */; };
+		2AB199831E271D1A002F45B2 /* XSAudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB199811E271D1A002F45B2 /* XSAudioCell.xib */; };
 		2AC4E8E61E207AF300F0AEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E51E207AF300F0AEAB /* main.m */; };
 		2AC4E8E91E207AF300F0AEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4E8E81E207AF300F0AEAB /* AppDelegate.m */; };
 		2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4E8ED1E207AF300F0AEAB /* Main.storyboard */; };
@@ -57,6 +59,9 @@
 		2A5D78761E21E90900AD5E1F /* XSAudioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioTableViewController.m; sourceTree = "<group>"; };
 		2A5D78781E21E91900AD5E1F /* XSAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioViewController.h; sourceTree = "<group>"; };
 		2A5D78791E21E91900AD5E1F /* XSAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioViewController.m; sourceTree = "<group>"; };
+		2AB1997F1E271D1A002F45B2 /* XSAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAudioCell.h; sourceTree = "<group>"; };
+		2AB199801E271D1A002F45B2 /* XSAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSAudioCell.m; sourceTree = "<group>"; };
+		2AB199811E271D1A002F45B2 /* XSAudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XSAudioCell.xib; sourceTree = "<group>"; };
 		2AC4E8E11E207AF300F0AEAB /* XSStreamPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSStreamPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC4E8E51E207AF300F0AEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AC4E8E71E207AF300F0AEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 				2A024F5A1E24829A00D0CE46 /* XSAudioView.h */,
 				2A024F5B1E24829A00D0CE46 /* XSAudioView.m */,
 				2A024F5D1E2482AF00D0CE46 /* XSAudioView.xib */,
+				2AB1997F1E271D1A002F45B2 /* XSAudioCell.h */,
+				2AB199801E271D1A002F45B2 /* XSAudioCell.m */,
+				2AB199811E271D1A002F45B2 /* XSAudioCell.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC4E8F41E207AF300F0AEAB /* LaunchScreen.storyboard in Resources */,
+				2AB199831E271D1A002F45B2 /* XSAudioCell.xib in Resources */,
 				2A024F191E23801400D0CE46 /* cover.jpeg in Resources */,
 				2AC4E8F11E207AF300F0AEAB /* Assets.xcassets in Resources */,
 				2AC4E8EF1E207AF300F0AEAB /* Main.storyboard in Resources */,
@@ -526,6 +535,7 @@
 				2A5D78731E21E62A00AD5E1F /* XSMainTableViewController.m in Sources */,
 				2AC4E8E61E207AF300F0AEAB /* main.m in Sources */,
 				2A5D78771E21E90900AD5E1F /* XSAudioTableViewController.m in Sources */,
+				2AB199821E271D1A002F45B2 /* XSAudioCell.m in Sources */,
 				2A024F161E237F7900D0CE46 /* XSStreamPlayer.m in Sources */,
 				2A024F5C1E24829A00D0CE46 /* XSAudioView.m in Sources */,
 			);

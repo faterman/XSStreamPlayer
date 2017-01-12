@@ -53,17 +53,18 @@ static NSString *demoAudioUrlStr = @"http://wyyimg.aspoontech.com/webimg/mp3/696
 
 #pragma mark - XSStreamPlayerDelegate
 - (void)audioPlayer:(XSStreamPlayer *)audioPlayer stateChanged:(XSStreamPlayerState)state previousState:(XSStreamPlayerState)previousState{
-    self.statusLabel.text = [NSString stringWithFormat:@"%ld-->%ld",previousState,state];
+    self.statusLabel.text = [NSString stringWithFormat:@"%li-->%li",previousState,state];
     if (state == XSStreamPlayerStateBuffering) {
         [self.indicator startAnimating];
     }else{
         [self.indicator stopAnimating];
     }
-
 }
+
 - (void)audioPlayer:(XSStreamPlayer *)audioPlayer PlayTo:(double)progress Duration:(double)duration{
     self.processSlider.value = progress / duration;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
